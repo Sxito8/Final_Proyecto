@@ -15,8 +15,8 @@ const App = () => {
       const response = await fetch(`https://v3.football.api-sports.io/teams?search=${query}`, {
         method: 'GET',
         headers: {
-          'x-rapidapi-host': 'v3.football.api-sports.io',
-          'x-rapidapi-key': 'c24a7f09a0f00ddec9a8e3b8c321f815'
+          'x-rapidapi-host': '',
+          'x-rapidapi-key': ''
         }
       });
       const data = await response.json();
@@ -32,8 +32,8 @@ const App = () => {
       const response = await fetch(`https://v3.football.api-sports.io/teams/statistics?team=${teamId}&season=${season}&league=${league}`, {
         method: 'GET',
         headers: {
-          'x-rapidapi-host': 'v3.football.api-sports.io',
-          'x-rapidapi-key': 'c24a7f09a0f00ddec9a8e3b8c321f815'
+          'x-rapidapi-host': '',
+          'x-rapidapi-key': ''
         }
       });
       const data = await response.json();
